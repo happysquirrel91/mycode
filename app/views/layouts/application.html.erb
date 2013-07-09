@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RailsProj</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.2.0/pure-min.css">
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+
+  <script src="http://use.typekit.net/ajf8ggy.js"></script>
+  <script>
+      try { Typekit.load(); } catch (e) {}
+  </script>
+
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="navbar-inner">
+    <div class="container">
+    </div>
+  </div>
+</header>
+</head>
+<body>
+<br>
+<br>
+
+
+
+<button>
+  <p><a href='/users/view3'>Sign Up Here!</a></p>
+</button>
+<%= ab_test("Sarah", "Justin", "Bieber")  %>
+<p> Is awesome </p>
+<% finished("Sarah")%>
+<%= yield %>
+
+<div class="content pure-g-r">
+<div class="header pure-u-1">
+  <div class="pure-menu pure-menu-open pure-menu-fixed pure-menu-horizontal">
+    <a class="pure-menu-heading" href="">Your Site</a>
+
+    <ul>
+    </ul>
+  </div>
+</div>
+
+<div class="splash pure-u-1">
+  <div class="pure-g-r">
+    <div class="pure-u-1-3">
+      <div class="l-box splash-image">
+        <img src="/teddy.jpg "
+             alt="Placeholder image for example.">
+      </div>
+    </div>
+
+    <div class="pure-u-2-3">
+      <div class="l-box splash-text">
+        <h1 class="splash-head">
+          Teddy wants a new home.
+        </h1>
+        <h2 class="splash-subhead">
+          This beautiful Golden Doodle is searching for a new home. He is loving and playful. He is a little over a year old. He loves to run, to play tug of war, and to cuddle. He has a lot of energy, and is the perfect companion for anyone!
+        </h2>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="content pure-u-1">
+  <div class="pure-g-r content-ribbon">
+    <div class="pure-u-2-3">
+      <div class="l-box">
+        <h4 class="content-subhead">Why Go Golden Doodle?</h4>
+
+        <h3>Golden Doodles are the best breed of dog in the whole world</h3>
+        <p>
+         They are sweet and hypoallergenic. They love to play with everyone. They love to cuddle too. They are the cutest dogs in all the world.
+        </p>
+      </div>
+    </div>
+
+    <div class="pure-u-1-3">
+      <div class="l-box">
+        <img src="/adult_teddy.jpg"
+             alt="Placeholder image for example.">
+      </div>
+    </div>
+  </div>
+
+  <div class="pure-g-r content-ribbon">
+    <div class="pure-u-1-3">
+      <div class="l-box">
+        <img src="/sleeping_teddy.jpg"
+             alt="Placeholder image for example.">
+      </div>
+    </div>
+
+    <div class="pure-u-2-3">
+      <div class="l-box">
+        <h4 class="content-subhead">Precious Baby Angel</h4>
+
+        <h3>Teddy wants a new home! He loves people so much</h3>
+        <p>
+         No matter if you are a working professional or a stay at home mom, just retiring, or in school, Teddy can be your new best friend!
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="pure-g-r">
+    <div class="pure-u-1-4">
+      <div class="l-box">
+        <h3>Please Call</h3>
+        <p>
+          Teddy wants to be a part of your heart forever. If you are interested in buying him, call 319.651.5897.
+        </p>
+      </div>
+    </div>
+
+    <div class="pure-u-1-4">
+      <div class="l-box">
+        <h3>Please Email</h3>
+        <p>
+          Teddy wants to be a part of your heart forever. If you are interested in buying him, email sarahabuagh@gmail.com       </p>
+      </div>
+    </div>
+
+    <div class="pure-u-1-4">
+      <div class="l-box">
+        <h3>Please Facebook</h3>
+        <p>
+          Teddy wants to be a part of your heart forever.  To see more of Teddy, look him up on Facebook at
+          <a href> http://wwww.facebook.com/teddybaugh</a>
+        </p>
+
+      </div>
+    </div>
+
+
+
+  <div class="pure-g-r">
+    <div class="pure-u-1">
+      <div class="l-box ribbon">
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="footer pure-u-1">
+  <p>Powered by <a href="http://github.com/andrew/split">Split</a> v<%=Split::VERSION %></p>
+  <p><a href='/split'>See the results</a></p></div>
+</div>
+
+<script src="http://yui.yahooapis.com/3.10.1/build/yui/yui-min.js"></script>
+<script>
+    YUI().use('node-base', 'node-event-delegate', function (Y) {
+        // This just makes sure that the href="#" attached to the <a> elements
+        // don't scroll you back up the page.
+        Y.one('.content').delegate('click', function (e) {
+            e.preventDefault();
+        }, 'a[href="#"]');
+    });
+</script>
+<div id="footer">
+
+</div>
+
+</body>
+
+</html>
+

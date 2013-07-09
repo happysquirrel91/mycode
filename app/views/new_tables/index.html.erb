@@ -1,0 +1,21 @@
+<h1>Listing new_tables</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @new_tables.each do |new_table| %>
+  <tr>
+    <td><%= link_to 'Show', new_table %></td>
+    <td><%= link_to 'Edit', edit_new_table_path(new_table) %></td>
+    <td><%= link_to 'Destroy', new_table, :method => :delete, :data => { :confirm => 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New New table', new_new_table_path %>

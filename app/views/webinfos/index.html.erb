@@ -1,0 +1,22 @@
+<h1>Listing webinfos</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Url</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @webinf.each do |webinfos| %>
+  <tr>
+    <td><%= webinf.name %></td>
+    <td><%= webinf.url %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+

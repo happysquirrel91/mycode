@@ -1,0 +1,2 @@
+module Pagecontroller::NewControllerHelper
+end

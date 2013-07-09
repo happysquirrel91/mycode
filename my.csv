@@ -1,0 +1,11 @@
+Experiment,Alternative,Participants,Completed,Conversion Rate,Z score,Control,Winner
+Nathan,viewb,4,4,1.0,0.0,true,false
+Nathan,viewa,8,3,0.375,-3.651,false,false
+view_link,viewb,1,1,1.0,0.0,true,false
+view_link,viewa,3,3,1.0,NaN,false,false
+Sarah,Justin,11,11,1.0,0.0,true,false
+Sarah,Bieber,14,14,1.0,NaN,false,false
+a_b_test_conversion,Sign up1,5,5,1.0,0.0,true,false
+a_b_test_conversion,Sign up2,8,8,1.0,NaN,false,false
+copy_for_signup_link,work,2,0,0.0,0.0,true,false
+copy_for_signup_link,out,0,0,0.0,0.0,false,false

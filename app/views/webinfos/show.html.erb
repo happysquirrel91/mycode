@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @webinfo.name %>
+</p>
+
+<p>
+  <b>Url:</b>
+  <%= @webinfo.url %>
+</p>
+
+
+<%= link_to 'Edit', edit_webinfo_path(@webinfo) %> |
+<%= link_to 'Back', webinfos_path %>
